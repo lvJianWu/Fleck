@@ -1,13 +1,23 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fleck", "Fleck\Fleck.csproj", "{8B12D929-AFA9-4307-BEFF-2ED0F1070FEE}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fleck", "Fleck\Fleck.csproj", "{8B12D929-AFA9-4307-BEFF-2ED0F1070FEE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{BDA01C02-E4AC-42BA-898A-ED4752F676EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "Samples\ConsoleApp\ConsoleApp.csproj", "{3D7680B4-0224-4F0C-B1F6-74FB7586EBDC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trusit.TableWrite", "Samples\ConsoleApp\Trusit.TableWrite.csproj", "{3D7680B4-0224-4F0C-B1F6-74FB7586EBDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fleck.Tests", "Fleck.Tests\Fleck.Tests.csproj", "{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fleck.Tests", "Fleck.Tests\Fleck.Tests.csproj", "{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW.Helper", "Samples\HW.Helper\HW.Helper.csproj", "{5495A12A-ABA1-4524-AF85-E6C68024D4F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trusit.Certs.Sign", "Trusit.Certs.Sign\Trusit.Certs.Sign.csproj", "{281BE537-C9AA-4AC8-B5FC-CD2481D6E151}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trusit.Service", "Trusit.Service\Trusit.Service.csproj", "{B6A5795D-69AC-4119-9C94-BD311572027D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Trusit.Servcie", "Trusit.Servcie\Trusit.Servcie.vdproj", "{C96F8AF2-6F7D-4292-92D1-3E3A00E1D381}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,22 +27,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}.Debug|x86.Build.0 = Debug|Any CPU
-		{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}.Release|x86.ActiveCfg = Release|Any CPU
-		{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}.Release|x86.Build.0 = Release|Any CPU
-		{3D7680B4-0224-4F0C-B1F6-74FB7586EBDC}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{3D7680B4-0224-4F0C-B1F6-74FB7586EBDC}.Debug|Any CPU.Build.0 = Debug|x86
-		{3D7680B4-0224-4F0C-B1F6-74FB7586EBDC}.Debug|x86.ActiveCfg = Debug|x86
-		{3D7680B4-0224-4F0C-B1F6-74FB7586EBDC}.Debug|x86.Build.0 = Debug|x86
-		{3D7680B4-0224-4F0C-B1F6-74FB7586EBDC}.Release|Any CPU.ActiveCfg = Release|x86
-		{3D7680B4-0224-4F0C-B1F6-74FB7586EBDC}.Release|Any CPU.Build.0 = Release|x86
-		{3D7680B4-0224-4F0C-B1F6-74FB7586EBDC}.Release|x86.ActiveCfg = Release|x86
-		{3D7680B4-0224-4F0C-B1F6-74FB7586EBDC}.Release|x86.Build.0 = Release|x86
 		{8B12D929-AFA9-4307-BEFF-2ED0F1070FEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8B12D929-AFA9-4307-BEFF-2ED0F1070FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B12D929-AFA9-4307-BEFF-2ED0F1070FEE}.Debug|x86.ActiveCfg = Debug|Any CPU
@@ -41,14 +35,66 @@ Global
 		{8B12D929-AFA9-4307-BEFF-2ED0F1070FEE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8B12D929-AFA9-4307-BEFF-2ED0F1070FEE}.Release|x86.ActiveCfg = Release|Any CPU
 		{8B12D929-AFA9-4307-BEFF-2ED0F1070FEE}.Release|x86.Build.0 = Release|Any CPU
+		{3D7680B4-0224-4F0C-B1F6-74FB7586EBDC}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{3D7680B4-0224-4F0C-B1F6-74FB7586EBDC}.Debug|Any CPU.Build.0 = Debug|x86
+		{3D7680B4-0224-4F0C-B1F6-74FB7586EBDC}.Debug|x86.ActiveCfg = Debug|x86
+		{3D7680B4-0224-4F0C-B1F6-74FB7586EBDC}.Debug|x86.Build.0 = Debug|x86
+		{3D7680B4-0224-4F0C-B1F6-74FB7586EBDC}.Release|Any CPU.ActiveCfg = Release|x86
+		{3D7680B4-0224-4F0C-B1F6-74FB7586EBDC}.Release|Any CPU.Build.0 = Release|x86
+		{3D7680B4-0224-4F0C-B1F6-74FB7586EBDC}.Release|x86.ActiveCfg = Release|x86
+		{3D7680B4-0224-4F0C-B1F6-74FB7586EBDC}.Release|x86.Build.0 = Release|x86
+		{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}.Debug|x86.Build.0 = Debug|Any CPU
+		{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}.Release|x86.ActiveCfg = Release|Any CPU
+		{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}.Release|x86.Build.0 = Release|Any CPU
+		{5495A12A-ABA1-4524-AF85-E6C68024D4F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5495A12A-ABA1-4524-AF85-E6C68024D4F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5495A12A-ABA1-4524-AF85-E6C68024D4F8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5495A12A-ABA1-4524-AF85-E6C68024D4F8}.Debug|x86.Build.0 = Debug|Any CPU
+		{5495A12A-ABA1-4524-AF85-E6C68024D4F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5495A12A-ABA1-4524-AF85-E6C68024D4F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5495A12A-ABA1-4524-AF85-E6C68024D4F8}.Release|x86.ActiveCfg = Release|Any CPU
+		{5495A12A-ABA1-4524-AF85-E6C68024D4F8}.Release|x86.Build.0 = Release|Any CPU
+		{281BE537-C9AA-4AC8-B5FC-CD2481D6E151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{281BE537-C9AA-4AC8-B5FC-CD2481D6E151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{281BE537-C9AA-4AC8-B5FC-CD2481D6E151}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{281BE537-C9AA-4AC8-B5FC-CD2481D6E151}.Debug|x86.Build.0 = Debug|Any CPU
+		{281BE537-C9AA-4AC8-B5FC-CD2481D6E151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{281BE537-C9AA-4AC8-B5FC-CD2481D6E151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{281BE537-C9AA-4AC8-B5FC-CD2481D6E151}.Release|x86.ActiveCfg = Release|Any CPU
+		{281BE537-C9AA-4AC8-B5FC-CD2481D6E151}.Release|x86.Build.0 = Release|Any CPU
+		{B6A5795D-69AC-4119-9C94-BD311572027D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6A5795D-69AC-4119-9C94-BD311572027D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6A5795D-69AC-4119-9C94-BD311572027D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B6A5795D-69AC-4119-9C94-BD311572027D}.Debug|x86.Build.0 = Debug|Any CPU
+		{B6A5795D-69AC-4119-9C94-BD311572027D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6A5795D-69AC-4119-9C94-BD311572027D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6A5795D-69AC-4119-9C94-BD311572027D}.Release|x86.ActiveCfg = Release|Any CPU
+		{B6A5795D-69AC-4119-9C94-BD311572027D}.Release|x86.Build.0 = Release|Any CPU
+		{C96F8AF2-6F7D-4292-92D1-3E3A00E1D381}.Debug|Any CPU.ActiveCfg = Debug
+		{C96F8AF2-6F7D-4292-92D1-3E3A00E1D381}.Debug|x86.ActiveCfg = Debug
+		{C96F8AF2-6F7D-4292-92D1-3E3A00E1D381}.Release|Any CPU.ActiveCfg = Release
+		{C96F8AF2-6F7D-4292-92D1-3E3A00E1D381}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3D7680B4-0224-4F0C-B1F6-74FB7586EBDC} = {BDA01C02-E4AC-42BA-898A-ED4752F676EF}
+		{B6A5795D-69AC-4119-9C94-BD311572027D} = {BDA01C02-E4AC-42BA-898A-ED4752F676EF}
+		{C96F8AF2-6F7D-4292-92D1-3E3A00E1D381} = {BDA01C02-E4AC-42BA-898A-ED4752F676EF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E80D5626-AB16-41A1-A33C-395C701071A9}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Samples\ConsoleApp\ConsoleApp.csproj
 		Policies = $0
-		$0.TextStylePolicy = $1
+		$0.TextStylePolicy = $4
 		$1.FileWidth = 120
 		$1.TabWidth = 2
 		$1.IndentWidth = 2
@@ -72,14 +118,10 @@ Global
 		$0.DotNetNamingPolicy = $3
 		$3.DirectoryNamespaceAssociation = PrefixedHierarchical
 		$3.ResourceNamePolicy = FileFormatDefault
-		$0.TextStylePolicy = $4
 		$4.FileWidth = 120
 		$4.TabWidth = 4
 		$4.inheritsSet = Mono
 		$4.inheritsScope = text/plain
 		$4.scope = text/plain
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
